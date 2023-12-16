@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:bisque;
+            margin: 0;
+            padding: 0;
+        }
+    
+        #frm {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: 20px auto;
+        }
+    
+        label {
+            font-weight: bold;
+        }
+    
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        input[type="button"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+    
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+    
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        .butns{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="frm">
+        <label for="fname">First Name: </label>
+        <input type="text" name="firstname" id="fname"><br><br>
+        <label for="lname">Last Name: </label>
+        <input type="text" name="lastname" id="lname"><br><br>
+
+        <div class="butns">
+        <input type="button" id="btn" value="Submit">
+        <input type="button" id="clrbtn" value="Clear">
+        </div>
+
+        <table border="1">
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <script src="./practice3.js"></script>
+    </form>
+</body>
+</html>
